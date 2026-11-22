@@ -406,7 +406,7 @@ function screenBoard() {
           h("span", { class: "muted", style: "font-weight:800" }, "Clock"),
           h("div", { class: "seg", role: "group", "aria-label": "Clock speed" },
             h("button", { type: "button", class: S.speed === 1 ? "on" : "", "aria-pressed": String(S.speed === 1), onclick: () => emit({ type: "speed", value: 1 }) }, "Real time"),
-            //h("button", { type: "button", class: S.speed === 30 ? "on" : "", "aria-pressed": String(S.speed === 30), onclick: () => emit({ type: "speed", value: 30 }) }, "Demo ×30")),
+            h("button", { type: "button", class: S.speed === 30 ? "on" : "", "aria-pressed": String(S.speed === 30), onclick: () => emit({ type: "speed", value: 30 }) }, "Demo ×30")),
           endArea)),
       h("div", { class: "people" }, people));
   });
